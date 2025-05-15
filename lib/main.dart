@@ -1,11 +1,17 @@
 import 'package:flutter/material.dart';
-import 'screens/splash_screen.dart';
+import 'pages/splash_screen.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
+import 'package:provider/provider.dart';
+import 'models/score_model.dart';
 
 // Flutter应用的入口函数，程序从这里开始执行
 void main() {
-  // 调用runApp启动Flutter应用，传入根Widget
-  runApp(const MyApp());
+  runApp(
+    ChangeNotifierProvider(
+      create: (_) => ScoreModel()..calculateScore(),
+      child: const MyApp(),
+    ),
+  );
 }
 
 // 定义一个无状态Widget，作为整个应用的根组件
@@ -42,3 +48,11 @@ class MyApp extends StatelessWidget {
   }
 }
 
+/*
+// 在设置页面中，例如按钮点击后：
+context.read<ScoreModel>().calculateScore(settings: {
+  'base': 60,
+  'bonus': 10,
+  'penalty': 5,
+});
+*/

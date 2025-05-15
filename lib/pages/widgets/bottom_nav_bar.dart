@@ -24,15 +24,15 @@ class BottomNavBar extends StatelessWidget {
       // 定义导航栏的项目列表（每项包含图标和标签）
       items: const <BottomNavigationBarItem>[
         BottomNavigationBarItem(
-          icon: Icon(Icons.chat),     // 第1项的图标：聊天图标
+          icon: Icon(Icons.home),     // 第1项的图标：聊天图标
           label: '主页',               // 第1项的标签：主页
         ),
         BottomNavigationBarItem(
-          icon: Icon(Icons.contacts), // 第2项的图标：联系人图标
+          icon: Icon(Icons.newspaper), // 第2项的图标：联系人图标
           label: '信息流',             // 第2项的标签：信息流
         ),
         BottomNavigationBarItem(
-          icon: Icon(Icons.explore),  // 第3项的图标：探索图标
+          icon: Icon(Icons.library_books),  // 第3项的图标：探索图标
           label: '快读书',             // 第3项的标签：快读书
         ),
         BottomNavigationBarItem(

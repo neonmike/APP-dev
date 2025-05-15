@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 
 // 引入刚刚创建的页面内容组件
-import '../content/home_page_content.dart';
-import '../content/feed_page_content.dart';
-import '../content/quick_read_page_content.dart';
-import '../content/profile_page_content.dart';
-import '../widgets/bottom_nav_bar.dart';
+import 'content/home_page_content.dart';
+import 'content/feed_page_content.dart';
+import 'content/quick_read_page_content.dart';
+import 'content/profile_page_content.dart';
+import 'package:my_app/pages/widgets/bottom_nav_bar.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
