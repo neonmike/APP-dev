@@ -8,7 +8,7 @@ import 'models/score_model.dart';
 void main() {
   runApp(
     ChangeNotifierProvider(
-      create: (_) => ScoreModel()..calculateScore(),
+      create: (_) => ScoreModel()..calculateScore(), // 注入监听对象
       child: const MyApp(),
     ),
   );
